@@ -20,19 +20,19 @@
             <p class="mt-3 mr-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est explicabo sed, distinctio totam necessitatibus a autem dicta eius nam impedit quae ipsam rerum nemo mollitia veritatis eos soluta reprehenderit tempore laboriosam eveniet aliquam dolore dolores vitae esse. Optio, iste. Magnam!</p>
             <div class="mt-7">
                 <h1 class="font-medium text-lg">Memory</h1>
-                <p class="inline border-2 p-1 rounded-md hover:bg-gray-400">8GB unified memory</p>
-                <p class="inline border-2 p-1 rounded-md hover:bg-gray-400">16GB unified memory</p>
+                <p id="8GB-memory-cost" class="inline border-2 p-1 rounded-md hover:bg-gray-400">8GB unified memory</p>
+                <p id="16GB-memory-cost" class="inline border-2 p-1 rounded-md hover:bg-gray-400">16GB unified memory</p>
             </div>
             <div class="mt-7">
                 <h1 class="font-medium text-lg">Storage</h1>
-                <p class="inline border-2 p-1 rounded-md hover:bg-gray-400">256GB SSD storage</p>
-                <p class="inline border-2 p-1 rounded-md hover:bg-gray-400">512GB SSD storage</p>
-                <p class="inline border-2 p-1 rounded-md hover:bg-gray-400">1TB SSD storage</p>
+                <p id="256GB-stroage-cost" class="inline border-2 p-1 rounded-md hover:bg-gray-400">256GB SSD storage</p>
+                <p id="512GB-stroage-cost" class="inline border-2 p-1 rounded-md hover:bg-gray-400">512GB SSD storage</p>
+                <p id="1TB-stroage-cost" class="inline border-2 p-1 rounded-md hover:bg-gray-400">1TB SSD storage</p>
             </div>
             <div class="mt-7">
                 <h1 class="font-medium text-lg">Choose your delivery option</h1>
-                <p class="inline border-2 p-1 rounded-md hover:bg-gray-400">Friday,Aug 25 FREE Prime Delivery</p>
-                <p class="inline border-2 p-1 rounded-md hover:bg-gray-400">FRiday,Aug 21 Delivery Charge $20</p>
+                <p id="zero-delivery-cost" class="inline border-2 p-1 rounded-md hover:bg-gray-400">Friday,Aug 25 FREE Prime Delivery</p>
+                <p id="pay-delivery-cost" class="inline border-2 p-1 rounded-md hover:bg-gray-400">Friday,Aug 21 Delivery Charge $20</p>
             </div>
             <div class="grid grid-cols-2 gap-4 mt-7">
                 <div>
@@ -44,19 +44,20 @@
                 </div>
                 <div>
                     <h5 class="font-medium">$1299</h5>
-                    <h5 class="font-medium">$0</h5>
-                    <h5 class="font-medium">$0</h5>
-                    <h5 class="font-medium">$0</h5>
-                    <h5 class="font-medium">$1299</h5>
+                    <h5 class="font-medium">$<span id="extra-memory-cost">0</span></h5>
+                    <h5 class="font-medium">$<span id="extra-storage-cost">0</span></h5>
+                    <h5 class="font-medium">$<span id="extra-delivery-cost">0</span></h5>
+                    <h5 class="font-medium">$<span id="total-cost">1299</span> </h5>
                 </div>
                 <div>
                     <p>Add Promo Code</p>
-                    <input class="border-2 rounded-md" type="text">
-                    <button class="bg-red-400 hover:bg-red-600 rounded-md p-1 ">Apply</button>
+                    <input id="promo-code" class="border-2 rounded-md" type="text" placeholder="type steve to get 20% discount">
+                    <button id="apply-button" class="border-2 rounded-md p-1 ">Apply</button>
                 </div>
             </div>
         </div>
     </section>
-    <h1 class="text-center font-bold text-4xl mt-6">Total:$1299</h1>
+    <h1 class="text-center font-bold text-4xl mt-6">Total:$<span id="grand-total">1299</span></h1>
+    <script src="script.js"></script>
 </body>
 </html>
